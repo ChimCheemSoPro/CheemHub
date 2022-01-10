@@ -181,9 +181,10 @@ function Teleport()
 end
 
 spawn(function()
-    while wait() do
+    while wait(5) do
         for i, v in pairs(game:GetService("Workspace"):GetChildren()) do
             if not string.find(v.Name, "Fruit") then
+		wait(5)
                 syn.queue_on_teleport('repeat wait() until game:IsLoaded() wait(4) loadstring(game:HttpGet("https://raw.githubusercontent.com/ChimCheemSoPro/CheemHub/main/HOPFRUIT.lua"))()')
                 Teleport()
                 break
