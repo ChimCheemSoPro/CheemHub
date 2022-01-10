@@ -184,7 +184,8 @@ spawn(function()
     while wait(1) do
         for i, v in pairs(game:GetService("Workspace"):GetChildren()) do
             if not string.find(v.Name, "Fruit") then
-                syn.queue_on_teleport('repeat wait() until game:IsLoaded() wait(4) loadstring(game:HttpGet("https://chvn--vn--vn--vn.000webhostapp.com/Synapse/Scriptsynapse.lua"))()')
+                syn.queue_on_teleport('repeat wait() until game:IsLoaded() wait(4) loadstring(game:HttpGet("https://raw.githubusercontent.com/ChimCheemSoPro/CheemHub/main/HOPFRUIT.lua"))()')
+                Teleport()
             end
         end
     end
